@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96ffffff">
+
+    <!--    viewpage-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Main_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp" />
+
+    <!--    底部滑动部件-->
+    <eu.long1.spacetablayout.SpaceTabLayout
+        android:id="@+id/mainActivity_bottomSliderTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:button_color="#fa1d54"
+        app:icon_one="@drawable/home"
+        app:icon_three="@drawable/my"
+        app:icon_two="@drawable/message"
+        app:layout_behavior="eu.long1.spacetablayout.SpaceTabLayoutBehavior"
+        app:number_of_tabs="three"
+        app:starting_position="one"
+        app:tab_color="#ffffff"
+        app:text_color="#000000"
+        app:text_one="音乐"
+        app:text_three="个人"
+        app:text_two="消息" />
+
+
+</RelativeLayout>

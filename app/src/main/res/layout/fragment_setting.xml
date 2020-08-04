@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_welcom">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_head"
+        android:layout_width="120dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/xiangji" />
+
+    <TextView
+        android:id="@+id/text_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更换头像"
+
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_head"/>
+
+    <Button
+        android:id="@+id/btn_takephoto"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_1"
+        android:layout_below="@id/text_setting"
+        android:text="拍照"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_photos"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_takephoto"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/edit_1"
+        android:layout_height="wrap_content"
+        android:text="从相册中选取"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/l_1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_photos"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="账户名："
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zhanghai"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_photos"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="邮箱："
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2542211236@qq.com"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_photos"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="电话："
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17674048020"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
